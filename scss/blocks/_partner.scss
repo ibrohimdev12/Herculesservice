@@ -1,0 +1,33 @@
+.partner {
+    &__title {
+        color: white;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    &__box {
+        margin-left: 30px;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .partner {
+        &__box {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+}
+
+@include mobile {
+    .partner {
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 230px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.service {
+    &__title {
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    &__box {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &__box::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__card {
+        flex: 0 0 auto;
+        width: 300px;
+        background: #1c1c1c;
+        border-radius: 16px;
+        padding: 20px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    &__img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ff6a00;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__svg {
+        width: 16px;
+        transition: 0.3s;
+    }
+
+    &__card:hover &__svg {
+        transform: translateX(5px);
+    }
+
+    &__box-two {
+        display: none;
+    }
+
+    &__btn {
+        cursor: pointer;
+        padding: 15px 40px;
+        background-color: #39546C;
+        color: white;
+        border: none;
+        margin-top: 50px;
+        margin-left: 30%;
+        transition: ease-out 0.5s;
+        box-shadow: inset 0 0 0 0 #725AC1;
+    }
+
+    &__btn:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 rgb(255, 101, 5);
+    }
+
+    &__btn:active {
+        transform: scale(0.9);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .service {
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__card {
+            display: block;
+        }
+
+        &__box-two {
+            display: none;
+        }
+
+        &__btn {
+            margin-top: 50px;
+        }
+    }
+}
+
+@include mobile {
+    .service {
+        &__box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &__box-two {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        &__btn {
+            margin-top: 50px;
+            margin-left: 45%;
+        }
+    }
+}

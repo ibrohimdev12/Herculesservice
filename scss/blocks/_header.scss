@@ -1,0 +1,172 @@
+.nav {
+    background-color: #333333;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    &__logo {
+        margin-top: 5px;
+        width: 150px;
+    }
+
+    &__box {
+        margin-left: 50px;
+    }
+
+    &__btn {
+        display: none;
+        padding: 10px 20px 10px 80px;
+        cursor: pointer;
+        background-color: #D1D9EBB2;
+        color: black;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        top: 18px;
+    }
+
+    &__button {
+        display: none;
+        cursor: pointer;
+        padding: 8px 11px 8px 11px;
+        background-color: #39546C;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        top: -15px;
+        left: 2px;
+    }
+
+    &__menu {
+        
+    }
+
+    &__icon {
+        display: none;
+    }
+
+    &__ul {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .nav {
+        background-color: #333333;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+
+        &__logo {
+            margin-top: 5px;
+            width: 300px;
+        }
+
+        &__box {
+            margin-left: 50px;
+        }
+
+        &__btn {
+            padding: 10px 30px 10px 110px;
+            cursor: pointer;
+            background-color: #D1D9EBB2;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            margin-top: 50px;
+        }
+
+        &__button {
+            cursor: pointer;
+            padding: 8px 21px 8px 31px;
+            background-color: #39546C;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            position: relative;
+            top: -16px;
+            margin-bottom: 40px;
+        }
+
+        &__icon {
+            display: flex;
+            gap: 8px;
+            margin-left: 30px;
+        }
+
+        &__ul {
+            display: none;
+        }
+
+    }
+}
+
+@include mobile {
+    .nav {
+        background-color: #333333;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+
+        &__logo {
+            margin-top: 5px;
+            width: 200px;
+        }
+
+        &__box {
+            margin-left: 50px;
+        }
+
+        &__btn {
+            padding: 10px 30px 10px 110px;
+            cursor: pointer;
+            background-color: #D1D9EBB2;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            margin-top: 40px;
+        }
+
+        &__button {
+            cursor: pointer;
+            padding: 8px 21px 8px 31px;
+            background-color: #39546C;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            position: relative;
+            top: 18px;
+            left: -183px;
+            margin-bottom: 60px;
+        }
+
+        &__icon {
+            display: flex;
+            gap: 8px;
+            margin-left: 30px;
+        }
+
+        &__ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: white;
+            font-size: 22px;
+        }
+
+    }
+}

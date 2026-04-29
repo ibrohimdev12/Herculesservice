@@ -1,0 +1,28 @@
+.about {
+    background-image: url(/assets/images/bgi-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+        padding-top: 70px;
+        padding-bottom: 92px;
+    }
+
+    &__title {
+        color: white;
+        text-align: center;
+        font-size: 56px;
+        position: relative;
+    }
+
+    &__text {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    &__desc {
+        color: #00C2FF;
+    }
+}

@@ -1,0 +1,95 @@
+.vehicle {
+    &__img {
+        margin-top: 50px;
+        margin-right: 10px;
+
+        display: none;
+    }
+
+    &__title {
+        color: white;
+        margin-top: 15px;
+    }
+
+    &__text {
+        color: white;
+        margin-top: 10px;
+        line-height: 24px;
+    }
+
+    &__info {
+        color: white;
+        margin-top: 50px;
+    }
+
+    &__desc {
+        color: white;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    &__image {
+        width: 340px;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .vehicle {
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__box-two {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        &__image {
+            display: flex;
+            margin-top: 60px;
+        }
+    }
+}
+
+@include mobile {
+    .vehicle {
+        &__title {
+            width: 400px;
+            font-size: 36px;
+            margin-left: 100px;
+        }
+
+        &__text {
+            width: 487px;
+            font-size: 16px;
+            margin-left: 100px;
+        }
+
+        &__img {
+            display: flex;
+        }
+
+        &__box-two {
+            gap: 30px;
+        }
+
+        &__info {
+            font-size: 36px;
+            width: 370px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            width: 380px;
+        }
+
+        &__image {
+            margin-left: 100px;
+            width: max-content;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.motor {
+    &__title {
+        color: white;
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+
+    &__text {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    &__images div {
+        display: flex;
+    }
+
+    &__img {
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    &__image {
+        margin-top: 5px;
+        margin-left: 20px;
+        width: 130px;
+    }
+
+    &__png {
+        margin-top: 5px;
+        margin-left: 20px;
+        width: 130px;
+    }
+}
+
+@include mobile {
+    .motor {
+        &__wrapper {
+            display: flex;
+            padding-top: 70px;
+        }
+
+        &__images {
+            display: flex;
+        }
+
+        &__info {
+            width: 600px;
+        }
+
+        &__img {
+            width: 335px;
+        }
+
+        &__image {
+            width: 166px;
+            height: 245px;
+            margin-top: 200px;
+        }
+
+        &__png {
+            width: 166px;
+            height: 245px;
+            margin-top: 200px;
+        }
+    }
+}

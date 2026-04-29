@@ -1,0 +1,51 @@
+.oil {
+    &__img {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    &__title {
+        color: white;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    &__info {
+        color: white;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-left: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .oil {
+        &__wrapper {
+            display: flex;
+            padding-top: 70px;
+        }
+    }
+}
+
+@include mobile {
+    .oil {
+        &__wrapper {
+            align-items: center;
+            gap: 50px;
+        }
+        
+        &__img {
+            width: 516px;
+        }
+        
+        &__title {
+            width: 450px;
+        }
+        
+        &__info {
+            width: 500px;
+        }
+    }
+}

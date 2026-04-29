@@ -1,0 +1,11 @@
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mobile {
+    @media (min-width: 1240px) {
+        @content;
+    }
+}
