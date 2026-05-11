@@ -14,7 +14,7 @@
                     <img class="nav__logo" src="./assets/icons/hercules__service-logo.svg" alt="logo">
                     <ul class="nav__ul">
                         <li class="list">
-                            <a href="./index.html"><span>Home</span></a>
+                            <a href="#"><span>Home</span></a>
                         </li>
                         <li class="list">
                             <a href="about.html"><span>About Us</span></a>
@@ -23,7 +23,7 @@
                             <a href="service.html"><span>Services</span></a>
                         </li>
                         <li class="list">
-                            <a href="#"><span>Contact Us</span></a>
+                            <a href="contact.html"><span>Contact Us</span></a>
                         </li>
                     </ul>
                     <div class="nav__icon">
@@ -32,8 +32,23 @@
                         <img src="./assets/icons/u_user.svg" alt="svg">
                     </div>
                     <div class="nav__box">
-                        <button class="nav__btn" id="menuBtn">Market</button>
+                        <button class="nav__btn">Market</button>
                         <button class="nav__button">Services</button>
+                        <img id="menuBtn" class="nav__menu-img" src="./assets/icons/menu.btn.svg" alt="">
+                        <ul id="menuList">
+                            <li class="list">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="about.html"><span>About Us</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="service.html"><span>Services</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="contact.html"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -100,5 +115,19 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btn = document.getElementById("menuBtn");
+            const list = document.getElementById("menuList");
+
+            btn.onclick = () => {
+                list.classList.toggle("show");
+            };
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>

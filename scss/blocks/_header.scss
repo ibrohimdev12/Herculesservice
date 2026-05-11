@@ -42,8 +42,50 @@
         left: 2px;
     }
 
-    &__menu {
-        
+    &__menu-img {
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #menuList {
+        background: #333;
+        color: white;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #1e1e1e;
+        border-radius: 12px;
+        padding: 10px 0;
+        width: 180px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        list-style: none;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 0.3s ease;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    #menuList li {
+        padding: 12px 16px;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    #menuList li:hover {
+        background: #333;
+    }
+
+    #menuList.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     &__icon {
@@ -166,6 +208,10 @@
             gap: 20px;
             color: white;
             font-size: 22px;
+        }
+
+        &__menu-img {
+            display: none;
         }
 
     }

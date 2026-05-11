@@ -61,15 +61,3 @@ btnPrev.addEventListener('click', function () {
     }
     MoveSlide(count)
 })
-
-const btns = [btnPrev, btnNext]
-btns.forEach((btn) => {
-    btn.addEventListener('mouseenter', function () {
-        clearInterval(interval)
-
-    })
-    btn.addEventListener('mouseleave', function () {
-        interval = getInterval()
-
-    })
-})

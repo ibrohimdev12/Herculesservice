@@ -7,6 +7,80 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__wrapper">
+                    <img class="nav__logo" src="./assets/icons/hercules__service-logo.svg" alt="logo">
+                    <ul class="nav__ul">
+                        <li class="list">
+                            <a href="#"><span>Home</span></a>
+                        </li>
+                        <li class="list">
+                            <a href="about.html"><span>About Us</span></a>
+                        </li>
+                        <li class="list">
+                            <a href="service.html"><span>Services</span></a>
+                        </li>
+                        <li class="list">
+                            <a href="contact.html"><span>Contact Us</span></a>
+                        </li>
+                    </ul>
+                    <div class="nav__icon">
+                        <img src="./assets/icons/u_search.svg" alt="svg">
+                        <img src="./assets/icons/language.svg" alt="svg">
+                        <img src="./assets/icons/u_user.svg" alt="svg">
+                    </div>
+                    <div class="nav__box">
+                        <button class="nav__btn">Market</button>
+                        <button class="nav__button">Services</button>
+                        <img id="menuBtn" class="nav__menu-img" src="./assets/icons/menu.btn.svg" alt="">
+                        <ul id="menuList">
+                            <li class="list">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="about.html"><span>About Us</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="service.html"><span>Services</span></a>
+                            </li>
+                            <li class="list">
+                                <a href="contact.html"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="message">
+            <div class="container">
+                <div class="message__wrapper">
+                    <h1 class="message__title">Get in touch</h1>
+                    <p class="message__text">Send a Message</p>
+                    <p class="message__info">Her parents had moved into the house, belonging to her Scottish grandparents, the Earl and Countess of Strathmore, only
+                    a few weeks before her birth.</p>
+                    <iframe class="message__location" src="https://www.google.com/maps/embed?pb=..." width="1200" height="400" style="border: 0" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btn = document.getElementById("menuBtn");
+            const list = document.getElementById("menuList");
+
+            btn.onclick = () => {
+                list.classList.toggle("show");
+            };
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>
